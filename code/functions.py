@@ -46,6 +46,7 @@ def run_model(model_name, X, Y):
     skmodel = model_name + "()"
     print(skmodel)
     model = eval(skmodel)
+    print(model)
     model.fit(X, Y)
     scores = cross_val_score(model, X, Y, 
                                 scoring="neg_mean_squared_error", cv=10)
@@ -56,9 +57,9 @@ def run_model(model_name, X, Y):
     #print(Y_train.describe())
     means_ratio = rmse.mean()/Y.mean()
     print("\n Mean RMSE / Labels mean = ",means_ratio, "\n")
-    return [rmse.mean(), rmse.std(), means_ratio]
     # Export model to file:
     fname = outpath + model_name +".pkl"
-    joblib.dump(model_name, fname)
-    # load with: linreg_loaded = joblib.load("linreg.pkl")
+    joblib.dump(model, fname)
+    return [rmse.mean(), rmse.std(), means_ratio]
+
       

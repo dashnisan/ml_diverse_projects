@@ -5,6 +5,7 @@ Created on Mon Nov 14 16:09:24 2022
 
 @author: diego
 """
+import os
 import numpy as np
 from sklearn.model_selection import cross_val_score # K-fold cross validation
 from sklearn.linear_model import LinearRegression
@@ -13,6 +14,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR   
 import joblib
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
+rootpath="/home/diego/Documents/EDUCATION/LEARNING/IT/MACHINE_LEARNING/ML_Handson_2022/workspace/1/wsp1/"
+outpath = os.path.join(rootpath, "out/2_end2end/")
 
 #%% Random tuner:
 def random_tuner (model_name, X, Y, params):
@@ -34,5 +37,8 @@ def random_tuner (model_name, X, Y, params):
     # print best estimator:
     print("\n\n Best estimator for ", model_name, ":\n")
     print(rand_search.best_estimator_)
+    # Export model to file:
+    fname = outpath + model_name +"_best.pkl"
+    joblib.dump(rand_search.best_estimator_, fname)
     return rand_search.best_estimator_
 #%%
