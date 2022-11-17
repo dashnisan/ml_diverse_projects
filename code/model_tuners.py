@@ -14,7 +14,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR   
 import joblib
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
-rootpath="/home/diego/Documents/EDUCATION/LEARNING/IT/MACHINE_LEARNING/ML_Handson_2022/workspace/1/wsp1/"
+rootpath="/workspace/1/wsp1/"
 outpath = os.path.join(rootpath, "out/2_end2end/")
 
 #%% Random tuner:

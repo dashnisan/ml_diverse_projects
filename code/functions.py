@@ -12,7 +12,7 @@ import numpy as np
 
 #%%
 
-rootpath="/home/diego/Documents/EDUCATION/LEARNING/IT/MACHINE_LEARNING/ML_Handson_2022/workspace/1/wsp1/"
+rootpath="/workspace/1/wsp1/"
 datapath = os.path.join(rootpath, "datasets/housing/")
 outpath = os.path.join(rootpath, "out/2_end2end/")
 codepath = os.getcwd
