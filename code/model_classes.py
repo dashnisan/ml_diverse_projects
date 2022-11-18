@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 14 17:01:41 2022
-
-@author: diego
+@author: dashnisan
 """
 
 class model:

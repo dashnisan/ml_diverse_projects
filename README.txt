@@ -1,9 +1,9 @@
 README.txt
 
-This is a sample code written by me for training the "California Housing Data Set".
+This is a sample code written by me for training the "California Housing Data Set". The main directions for the pipelines are taken from [2] but implemented in scripts rather than in jupyter notebooks.  
 
 Currently the code does:
-1. Generate training and data sets using stratified shuffling on the attribute "median_income". A summary of the training data can be found in ml_housing/out/2_end2end/train_data_summary.csv
+1. Generate training and data sets using stratified shuffling on the attribute "median_income". A summary of the training data can be found in ml_housing/out/2_end2end/train_data_summary.csv and an overview in the jupyter notebook ml_housing/code/visualize_nb.ipynb.
 
 2. Data preprocessing using scikit-learn pipelines: 
     a. Fill missing numerical data with "median" strategy
@@ -14,7 +14,7 @@ No PCA or similar algorithm is applied.
 3. Training on training set:
 try_models = ['LinearRegression', 'RandomForestRegressor', 'SVR']
 SVR stands for Support Vector Regressor
-This 3 models are trainied using the standard hyperparameters of scikit-learn and using cross validation with 10 subsets.
+These 3 models are trained using the standard hyperparameters of scikit-learn and using cross validation with 10 subsets.
 The comparison of the training results can be seen under:
 ml_housing/out/2_end2end/model_comparison.csv
 
@@ -34,8 +34,10 @@ ml_housing/out/2_end2end/best_model_rmse_test.csv
 All the models are exported as .pkl objects in order to enable further analysis and improvement; however those files are not available in github
 because of the large storage requirements (magnitudes in the order 100MB-1G).
 
+ToDo:
+The same data set will be processed with tensorflow using a single GPU. This work is ongoing and will be published as soon as it is done.
 
 References:
-* https://developers.google.com/machine-learning/crash-course/california-housing-data-description
-* Géron, Aurélien. Hands-On Machine Lerarning with Scikit-Learn, Keras and TensorFlow. Second Edition, 2019, O'Reailly Media Inc.
-* Ng. Andrew. Machine Learning. Course offered by Stanford University on coursera.org
+[1] https://developers.google.com/machine-learning/crash-course/california-housing-data-description
+[2] Géron, Aurélien. Hands-On Machine Lerarning with Scikit-Learn, Keras and TensorFlow. Second Edition, 2019, O'Reilly Media Inc.
+[3] Ng. Andrew. Machine Learning. Course offered by Stanford University on coursera.org. This course is archived and has been replaced.See https://www.coursera.org/specializations/machine-learning-introduction

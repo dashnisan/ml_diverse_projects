@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 31 23:20:50 2022
-
-@author: diego
+@author: dashnisan
 """
 from functions import load_housing_data
 

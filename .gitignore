@@ -1,0 +1,8 @@
+# All model files .pkl:
+*.pkl
+
+# All figures:
+*.pdf
+
+# All shell scripts:
+*.sh

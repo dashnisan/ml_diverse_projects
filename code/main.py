@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov  1 00:21:19 2022
-
-@author: diego
+@author: dashnisan
 """
 import functions
 import model_tuners
