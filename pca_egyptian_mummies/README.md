@@ -1,6 +1,6 @@
-README:
+## COMPARISON OF PCA ALGOITHMS
 
-In the notebook pca_autoencoder_morphometrics.ipynb we compare different dimensionality reduction algorithms (which serve as a previous step for further analysis) on the spatial coordinates morphometric landmarks on the skulls of male egyptian mummies.
+In the notebook pca_autoencoder_morphometrics.ipynb we compare different dimensionality reduction algorithms (which serve as a previous step for further analysis) on the spatial coordinates of morphometric landmarks on the skulls of egyptian mummies.
 
 <ul>
   <li>PCA analytical (linear model)</li>
