@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest --nbval-lax pca_autoencoder_morphometrics.ipynb
+	python -m pytest --nbval-lax ./pca_egyptian_mummies/*.ipynb
 
 format:
 	black *.py
